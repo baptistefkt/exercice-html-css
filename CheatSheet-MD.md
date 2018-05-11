@@ -120,5 +120,3 @@ Résultat :
 
 * [x] Tâche 1
 * [ ] Tâche 2
-
-Test
