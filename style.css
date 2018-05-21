@@ -1,0 +1,114 @@
+body
+{
+  background-color: #F1F2C0;
+}
+
+h1
+{
+  color: #332F29;
+}
+
+h3
+{
+  color: #CC3910;
+}
+
+.titres
+{
+  background-color: #332F29;
+  color: #CCC59E;
+}
+
+.italique
+{
+  background-color: #332F29;
+  color: #CCC59E;
+}
+
+.gras
+{
+  background-color: #332F29;
+  color: #CCC59E;
+}
+
+.barré
+{
+  background-color: #332F29;
+  color: #CCC59E;
+}
+
+.lignes
+{
+  background-color: #332F29;
+  color: #CCC59E;
+}
+
+.quotes
+{
+  background-color: #332F29;
+  color: #CCC59E;
+}
+
+.noMd
+{
+  background-color: #332F29;
+  color: #CCC59E;
+}
+
+.liens
+{
+  background-color: #332F29;
+  color: #CCC59E;
+}
+
+.ul
+{
+  background-color: #332F29;
+  color: #CCC59E;
+}
+
+.ol
+{
+  background-color: #332F29;
+  color: #CCC59E;
+}
+
+.codeBlock
+{
+  background-color: #332F29;
+  color: #CCC59E;
+}
+
+.codeBlockJS
+{
+  background-color: #332F29;
+  color: #CCC59E;
+}
+
+.image
+{
+  background-color: #332F29;
+  color: #CCC59E;
+}
+
+.tableau
+{
+  background-color: #332F29;
+  color: #CCC59E;
+}
+
+.checkbox
+{
+  background-color: #332F29;
+  color: #CCC59E;
+}
+
+th
+{
+    border: 1px solid black;
+}
+
+td
+{
+    border: 1px solid black;
+}
