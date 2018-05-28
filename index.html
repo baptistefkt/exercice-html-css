@@ -2,6 +2,7 @@
 <html>
   <head>
       <meta charset="utf-8" />
+      <link rel="stylesheet" href="style.css" />
       <title>markdown</title>
   </head>
   <body>
@@ -9,163 +10,196 @@
 
     <!-- Titres -->
     <h3> Voici comment écrire des <em>titres</em> :</h3>
-    <pre>
-      <code>
-    # Ceci est un titre h1
+    <div class="titres">
+      <pre>
+        <code>
+      # Ceci est un titre h1
 
-    ## Ceci est un titre h2
+      ## Ceci est un titre h2
 
-    ##### Ceci est un titre h5
+      ##### Ceci est un titre h5
 
-    ###### Ceci est un titre h6
-      </code>
-    </pre>
+      ###### Ceci est un titre h6
+        </code>
+      </pre>
+    </div>
     <!-- Italics -->
     <h3> Voici comment mettre en <em>italique</em> :</h3>
-    <pre>
-      <code>
-    *Ce texte* est en italique
+    <div class="italique">
+      <pre>
+        <code>
+      *Ce texte* est en italique
 
-    _Ce texte_ est en italique
-      </code>
-    </pre>
+      _Ce texte_ est en italique
+        </code>
+      </pre>
+    </div>
     <!-- Gras -->
     <h3> Voici comment mettre du texte en <em>gras</em> :</h3>
-    <pre>
-      <code>
-    **Ce texte** est en gras
+    <div class="gras">
+      <pre>
+        <code>
+      **Ce texte** est en gras
 
-    __Ce texte__ est en gras
-      </code>
-    </pre>
+      __Ce texte__ est en gras
+        </code>
+      </pre>
+    </div>
     <!-- Barrer-->
     <h3> Voici comment mettre un texte en <em>barré</em> :</h3>
-    <pre>
-      <code>
-    ~~Ce texte~~ est barré
-      </code>
-    </pre>
+    <div class="barré">
+      <pre>
+        <code>
+      ~~Ce texte~~ est barré
+        </code>
+      </pre>
+    </div>
     <!-- Lignes horizontales-->
     <h3> Voici comment mettre une <em>ligne horizontale</em> :</h3>
-    <pre>
-      <code>
-    ---
-    ___
-      </code>
-    </pre>
+    <div class="lignes">
+      <pre>
+        <code>
+      ---
+      ___
+        </code>
+      </pre>
+    </div>
     <!-- Citations-->
     <h3> Voici comment mettre un <em>citation</em> :</h3>
-    <pre>
-      <code>
-    >Ceci est une citation
-      </code>
-    </pre>
+    <div class="quotes">
+      <pre>
+        <code>
+      >Ceci est une citation
+        </code>
+      </pre>
+    </div>
     <!-- Ne pas Markdowner-->
     <h3> Voici comment ne pas <em>Markdowner</em> :</h3>
     Pour ne pas Markdowner, utiliser le backslash `\` :
-    <pre>
-      <code>
-    \*Ce texte n'est pas en italique\*
-      </code>
-    </pre>
-    <!--Liens-->
-    <h3> Voici un <em>lien</em> :</h3>
-    <pre>
-      <code>
-    [Mon site](https://baptistefkt.github.io "github")
-      </code>
-    </pre>
-    <!--UL-->
-    <h3> Voici comment faire une <em>liste non-ordonnée</em> :</h3>
-    <pre>
-      <code>
-    * Liste
-    * Liste 2
-      * Liste indentée
-        * Liste indentée 2
-      </code>
-    </pre>
-    <!--OL-->
-    <h3> Voici comment faire une <em>liste ordonée</em> :</h3>
-    <pre>
-      <code>
-    1. Item 1
-    1. Item 2
-    1. Item 3
-      1. Item indenté
-      1. Item indenté 2
-      </code>
-    </pre>
-    <!-- Inline Code Block -->
-    <h3> Pour écrire un <em>Code Block</em>, utiliser le ` pour une ligne ou le triple ``` pour un block :</h3>
-    <pre>
-      <code>
-    `&lt;p&gt;Ceci est un paragraphe&lt;/p&gt;`
-      </code>
-    </pre>
-    <p>```javascript <br> function myFunction (p1, p2){ <br> return p1 * p2; <br> } <br> ```</p>
-    <p>Ce qui donne :</p>
-    <p>
+    <div class="noMd">
       <pre>
         <code>
-    function myFunction (p1, p2) {
-      return p1 * p2;
-    }
+      \*Ce texte n'est pas en italique\*
         </code>
       </pre>
-    </p>
+    </div>
+    <!--Liens-->
+    <h3> Voici un <em>lien</em> :</h3>
+    <div class="liens">
+      <pre>
+        <code>
+      [Mon site](https://baptistefkt.github.io "github")
+        </code>
+      </pre>
+    </div>
+    <!--UL-->
+    <h3> Voici comment faire une <em>liste non-ordonnée</em> :</h3>
+    <div class="ul">
+      <pre>
+        <code>
+      * Liste
+      * Liste 2
+        * Liste indentée
+          * Liste indentée 2
+        </code>
+      </pre>
+    </div>
+    <!--OL-->
+    <h3> Voici comment faire une <em>liste ordonée</em> :</h3>
+    <div class="ol">
+      <pre>
+        <code>
+      1. Item 1
+      1. Item 2
+      1. Item 3
+        1. Item indenté
+        1. Item indenté 2
+        </code>
+      </pre>
+    </div>
+    <!-- Inline Code Block -->
+    <h3> Pour écrire un <em>Code Block</em>, utiliser le ` pour une ligne ou le triple ``` pour un block :</h3>
+    <div class="codeBlock">
+      <pre>
+        <code>
+      `&lt;p&gt;Ceci est un paragraphe&lt;/p&gt;`
+        </code>
+      </pre>
+    </div>
+    <div class="codeBlockJS">
+        <p>```javascript <br> function myFunction (p1, p2){ <br> return p1 * p2; <br> } <br> ```</p>
+    </div>
+    <p>Ce qui donne :</p>
+    <div class="codeBlockJS">
+      <p>
+        <pre>
+          <code>
+      function myFunction (p1, p2) {
+        return p1 * p2;
+      }
+          </code>
+        </pre>
+      </p>
+    </div>
     <!-- Images -->
     <h3> Voici comment mettre une <em>image</em> :</h3>
-    <pre>
-      <code>
-    ![Mon image](https://images.beinsports.com/TikwDhghZZibM8O8ODCWUmyNPaY=/1413125-Compo_d_equipe_BRESIL_2.png)
-      </code>
-    </pre>
+    <div class="image">
+      <pre>
+        <code>
+      ![Mon image](https://images.beinsports.com/TikwDhghZZibM8O8ODCWUmyNPaY=/1413125-Compo_d_equipe_BRESIL_2.png)
+        </code>
+      </pre>
+    </div>
     <!-- Tableaux -->
     <h3> Voici un <em>tableau</em> :</h3>
-    <pre>
-      <code>
-    | Prénom|Nom|Email|
-    |:------|:-:|----:|
-    |Baptiste |Firket| baptistefirket@gmail.com |
-    | Jeanmich|Michaelsonovitch| jeanmich@gmail.com|
-      </code>
-    </pre>
+    <div class="tableau">
+      <pre>
+        <code>
+      | Prénom|Nom|Email|
+      |:------|:-:|----:|
+      |Baptiste |Firket| baptistefirket@gmail.com |
+      | Jeanmich|Michaelsonovitch| jeanmich@gmail.com|
+        </code>
+      </pre>
+    </div>
     <p> Résultat :</p>
-
-    <table>
-      <tr>
-        <th>Prénom</th>
-        <th>Nom</th>
-        <th>Email</th>
-      </tr>
-      <tr>
-        <td>Baptiste</td>
-        <td>Firket</td>
-        <td>baptistefirket@gmail.com</td>
-      </tr>
-      <tr>
-        <td>Jeanmich</td>
-        <td>Michaelsonovitch</td>
-        <td>jeanmich@gmail.com</td>
-      </tr>
-    </table>
-
+      <table>
+        <tr>
+          <th>Prénom</th>
+          <th>Nom</th>
+          <th>Email</th>
+        </tr>
+        <tr>
+          <td>Baptiste</td>
+          <td>Firket</td>
+          <td>baptistefirket@gmail.com</td>
+        </tr>
+        <tr>
+          <td>Jeanmich</td>
+          <td>Michaelsonovitch</td>
+          <td>jeanmich@gmail.com</td>
+        </tr>
+      </table>
+    </div>
 
     <!-- Liste Checkbox -->
     <h3>Voici une <em>liste checkbox</em> :</h3>
-    <pre>
-      <code>
-    * [x] Tâche 1
-    * [ ] Tâche 2
-      </code>
-    </pre>
+    <div class="checkbox">
+      <pre>
+        <code>
+      * [x] Tâche 1
+      * [ ] Tâche 2
+        </code>
+      </pre>
+    </div>
     <p>Résultat :</p>
+    <div class="checkboxResult">
       <form>
         <p>
           <input type="checkbox" name="Tâche 1" checked>Tâche 1 <br>
           <input type="checkbox" name="Tâche 2" Tâche 2>Tâche 2
         </p>
       </form>
+    </div>
   </body>
 </html>

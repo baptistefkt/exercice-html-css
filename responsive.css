@@ -1,0 +1,28 @@
+body {
+  width: 100%;
+  background-color: blue;
+}
+
+@media only screen and (max-width: 768px){
+  body {
+    background-color: green;
+  }
+  #petit {
+    display: none;
+  }
+  #grand {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 300px){
+  body {
+    background-color: red;
+  }
+  #moyen {
+    display: none;
+  }
+  #grand {
+    display: none;
+  }
+}
