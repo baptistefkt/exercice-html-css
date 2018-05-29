@@ -1,28 +1,55 @@
-body {
-  width: 100%;
-  background-color: blue;
+p {
+  padding: 10px;
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 400px){
   body {
-    background-color: green;
+    background-color: #D54733;
   }
-  #petit {
+  .medium {
     display: none;
   }
-  #grand {
+  .large {
     display: none;
   }
 }
 
-@media only screen and (max-width: 300px){
+@media only screen and (min-width:401px) and (max-width: 800px){
   body {
-    background-color: red;
+    background-color: #3AA84B;
   }
-  #moyen {
+  .paraContainer2 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #para4 {
+    flex: 2;
+  }
+  #para5 {
+    flex: 1;
+  }
+  #para6 {
+    flex: 100%;
+  }
+  .small {
     display: none;
   }
-  #grand {
+  .large {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 801px){
+  body {
+    background-color: #0E5D9E;
+  }
+  .paraContainer3 {
+    display: flex;
+  }
+  .medium {
+    display: none;
+  }
+  .small {
     display: none;
   }
 }
